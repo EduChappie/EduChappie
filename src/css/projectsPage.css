@@ -31,3 +31,8 @@
     width: 125px;
     height: 125px;
 }
+.images_projects {
+    width: 50%;
+    height: 60%;
+    background: white; 
+}
