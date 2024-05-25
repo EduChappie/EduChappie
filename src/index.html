@@ -6,11 +6,12 @@
     <title>Eduardo F.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
     
     <link rel="stylesheet" href="./css/firtsPage.css">
     <link rel="stylesheet" href="./css/bioPage.css">
-    <link rel="stylesheet" href="./css/projectsPage.css">
+    <link rel="stylesheet" id="projectPage" href="./css/projectsPage.css">
 </head>
 <body>
     <article class="main_page">
@@ -21,11 +22,11 @@
         <div class="social_mediasBox">
             <img src="../images/logo-github.svg" onclick="socialMedia(1)" alt="github">
             
-            <img src="../images/logo-linkedin.svg" alt="linkedin">
+            <img src="../images/logo-linkedin.svg" onclick="socialMedia(2)" alt="linkedin">
 
             <img src="../images/logo-instagram.svg" onclick="socialMedia(3)" alt="instagram">
 
-            <img class="hamburguer" src="../images/menu-button-of-three-horizontal-lines.png" alt="menu">
+            <img class="hamburguer" src="../images/balao-de-fala.svg" alt="menu">
             <script>
                 
             </script>
@@ -43,13 +44,30 @@
             <h1 class="welcome">
                 Hi and <br>
                 Welcome to my Web portifolio
-                <button onclick="soScroll(973)">See more</button>
+                
+                <br>
+                <div id="spaceMode">
+                    <button class="slide" id="slide">
+                        <a href="#bio_page">
+                            See more
+                        </a>
+                    </button>
+                </div>
+                <script>
+                    $("#slide").click(function() { 
+                        $('html, body').animate({ 
+                            scrollTop: $("#bio_page").offset().top 
+                        }, 1000);
+                        console.log("foi222")
+                    })
+
+                </script>
             </h1>
             
         </div>
     </article>
 
-    <article class="bio_page">
+    <article id="bio_page" class="bio_page">
         <section class="photoFace">
             <div class="face">
                 <img class="myFace" src="../images/face.jpg" alt="minha foto">
@@ -69,31 +87,40 @@
                 <h1>About-me</h1>
                 <h2>Eduardo F. Moreira S.</h2>
                 <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sapien sit amet venenatis dignissim. Suspendisse
+                    All my name is Eduardo Fabricio Moreira Souza, <br>I'm 18, born in Brazil &#127463;&#127479;, Amazonas. I love music and programming.
                 </h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sapien sit amet venenatis dignissim. Suspendisse pellentesque faucibus risus, nec imperdiet odio finibus ac. Duis sed egestas turpis. Etiam hendrerit, orci eget rutrum placerat, leo ipsum blandit tellus, sit amet placerat diam orci sit amet turpis.
+                I’m new in the job market, I don’t have so much experience, but I’m focused on doing my best for my first job. I have good skill with programming, quick learning and a good relationship with teams and groups. As my mom said “work with what you like and you’ll work well, then will be happy.”
             </p>
             <div class="main_languages">
-                <img src="../images/python.png" alt="python">
-                <img src="../images/js.png" alt="javascript">
-                <img src="../images/nodejs.png" alt="nodejs">
                 <img src="../images/html.png" alt="html">
-                <img src="../images/Android_Studio.png" alt="androidStudio">
-                <img src="../images/java.png" alt="java">
                 <img src="../images/css.png" alt="css">
+                <img src="../images/python.png" alt="python">
+                <img src="../images/java.png" alt="java">
+                <img src="../images/js.png" alt="javascript"> 
+                <img src="../images/nodejs.png" alt="nodejs">
             </div>
             <div>
-                <button onclick="soScroll(1950)">
-                    See my projects
+                <button class="slide" id="slide2">
+                    <a href="#projects_page">
+                        See my projects
+                    </a>
                 </button>
+                <script>
+                    $("#slide2").click(function() { 
+                        $('html, body').animate({ 
+                            scrollTop: $("#projects_page").offset().top 
+                        }, 1000); 
+                        console.log("foi")
+                    })
+                </script>
             </div>
             </div>
             
         </section>
     </article>
 
-    <article class="projects_page">
+    <article id="projects_page" class="projects_page">
         <header class="logo_header">
             <div class="logomini">
                 <img src="../images/logo_white.png" alt="logo_ef">
@@ -109,21 +136,56 @@
         </header>
 
         <section>
-            <div class="images_projects">
-                teste
+            <div class="bar">
+                meus melhores projetos estão aqui, escolhidos a dedo
             </div>
-            <div class="list_projects">
-                <li>
-                    <ul>css Experiments</ul>
-                    <ul>Internet Copied</ul>
-                    <ul>ChatTalk</ul>
-                    <ul>Users Login</ul>
-                    <ul>Apps Mobiles</ul>
-                </li>
+            <div id="projects">
+                
+                <div class="projects" onclick="choice(1)">1#
+                    <p class="subText_pro">
+                        Css Experiments
+                    </p>
+                </div>
+                <div class="projects" onclick="choice(2)">2#
+                    <p class="subText_pro">
+                        Facebook Template
+                    </p>
+                </div>
+                <div class="projects" onclick="choice(3)">3#
+                    <p class="subText_pro">
+                        Chat Real Time
+                    </p>
+                </div>
+                <div class="projects" onclick="choice(4)">4#
+                    <p class="subText_pro">
+                        Login user
+                    </p>
+                </div>
+                <div class="projects" onclick="choice(5)">5#
+                    <p class="subText_pro">
+                        App Mobile
+                    </p>
+                </div>
+                <div class="box"></div>
+            </div>
+
+            <div none id="imgsPro">
+                <div id="pictures">
+                    
+                    <img src="../images/github  my.png" alt="escolha um dos meus projetos para visualizar --\>">     
             </div>
         </section>
     </article>
 
     <script src="./js/code.js"></script>
+    <script src="./js/relink.js"></script>
 </body>
 </html>
+
+<!--
+    <ul>css Experiments</ul>
+    <ul>Facebook Template</ul>
+    <ul>ChatTalk</ul>
+    <ul>Login Interface</ul>
+    <ul>Apps Mobiles</ul>
+-->
