@@ -1,0 +1,69 @@
+.bio_page {
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section.photoFace, section.info {
+    width: 50%;
+    height: 950px;
+}
+section.info {
+    font-family: Trirong;
+    text-align: center;   
+}
+div.text {
+    padding: 0 120px;
+    padding-top: 20px;
+}
+
+section.info > h1, h2, h3, p {
+    margin-top: 20px;
+}
+.info h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.info h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+section.info p, h3 {
+    color: #000;
+    text-align: justify;
+    font-family: Trirong;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+section.line {
+    border: 1px solid rgb(181, 181, 181);
+    height: 666px;
+}
+.face {
+    width: 623px;
+    height: 914px;
+    margin: 0 auto;
+    background-color: silver;
+}
+
+.main_languages {
+    width: 450px;
+    margin: 40px auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+.main_languages img {
+    width: 80px;
+    height: 80px;
+}
