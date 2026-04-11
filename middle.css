@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+.redes {
+    position: fixed;
+    z-index: 5;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(235, 235, 235);
+    padding: 5px 8px 2px 8px;
+    border-radius: 5px;
+}
+.redes ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    list-style-type: none;
+    transition: all 0.4s ease;
+}
+.redes img {
+    width: 50px;
+    transition: transform 0.3s;
+}
+.redes img:hover {
+    scale: 1.1;
+    cursor: pointer;
+    opacity: 80%;
+}
+.redes.column ul {
+    flex-direction: row;
+    gap: 15px;
+}
+
+
 div.background_letters {
     color: #161618;
     position: absolute;
@@ -17,10 +48,28 @@ section {
     background-color: transparent;
     color: white;
 }
-
 hr {
     position: relative;
     z-index: 3;
     width: 80%;
     margin: 0 auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.box p, .box img {
+    width: 50%;
+}
+.box img {
+    border: 1px solid white;
 }

@@ -33,7 +33,26 @@ div > img {
 .menu button:hover {
     cursor: pointer;
 }
-.menu a {
+.link {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: black;
+}
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
 }
