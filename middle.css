@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+div.background_letters {
+    color: #161618;
+    position: absolute;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 40px auto;
+    font: normal 13pt 'Roboto Slab';
+    background-color: transparent;
+    color: white;
+}
+
+hr {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    margin: 0 auto;
+}
