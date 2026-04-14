@@ -1,0 +1,27 @@
+section#projetos {
+    width: 70%;
+}
+
+.list_projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list_projects .pj {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.list_projects .pj .logo {
+    width: 30%;
+    border: 1px solid white;
+}
+.list_projects .pj img {
+    margin-top: 10px;
+}
+.list_projects .pj .dados {
+    width: 70%;
+    text-align: start;
+    padding-left: 20px;
+}

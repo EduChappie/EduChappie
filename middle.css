@@ -62,14 +62,32 @@ section h2 {
 
 .box {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
-.box p, .box img {
-    width: 50%;
+.box p {
+    width: 74%;
+}
+.perfil_box {
+    width: 25%;
 }
 .box img {
+    width: 80%;
     border: 1px solid white;
+}
+
+section#formacao {
+    width: 50%;
+    margin: 50px auto;
+}
+
+section#skills {
+    width: 50%;
+    margin: 50px auto;
+}
+section#skills ul {
+    list-style-type: none;
+    margin-left: 30px;
 }
