@@ -55,15 +55,6 @@ Arquitetura de software • Orientação a objetos • Levantamento de requisito
 
 ---
 
-## 📚 Atualmente estudando
-
-- Arquitetura e organização de software
-- Desenvolvimento de jogos com GameMaker/GML
-- Estruturação e reutilização de sistemas
-- Engenharia de Software
-
----
-
 ## Onde me encontrar
 
 [LinkedIn](http://linkedin.com/in/eduardo-fabr%C3%ADcio-a936102a1)
