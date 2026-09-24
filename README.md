@@ -10,7 +10,7 @@ Ao longo da minha formação, participei do desenvolvimento de diferentes projet
 Tenho experiência com desenvolvimento mobile e web, levantamento de requisitos, prototipação, testes funcionais, versionamento e trabalho em equipe. Gosto especialmente da parte de arquitetura e de quebrar a cabeça na estrutura e interligação de sistemas.
 
 
-Se quiser ver mais... Pode continuar 
+
 ---
 
 ## Projetos
